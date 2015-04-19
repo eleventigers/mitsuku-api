@@ -1,6 +1,6 @@
 {
   "name": "mitsuku-api",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Simple API for Mitsuku chatbot",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "Mitsuku",
     "chatbot"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/eleventigers/mitsuku-api"
   },
