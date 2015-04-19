@@ -11,7 +11,11 @@
     "Mitsuku",
     "chatbot"
   ],
-  "author": "eleventigers",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/eleventigers/mitsuku-api"
+  },
+  "author": "eleventigers phonodelik@gmail.com",
   "license": "Apache 2.0",
   "dependencies": {
     "bluebird": "^2.9.24",
