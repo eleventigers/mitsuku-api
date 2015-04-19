@@ -4,7 +4,7 @@
   "description": "Simple API for Mitsuku chatbot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "keywords": [
     "api",
@@ -16,10 +16,10 @@
   "dependencies": {
     "bluebird": "^2.9.24",
     "cheerio": "^0.19.0",
-    "sanitizer": "^0.1.2",
     "superagent": "^1.2.0"
   },
   "devDependencies": {
+    "cleverbot-node": "^0.1.8",
     "say": "^0.6.0",
     "tape": "^4.0.0"
   }
