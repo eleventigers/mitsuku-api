@@ -10,10 +10,13 @@ This library is not intended for any serious use. Under the hood it just scrapes
 
 ## Usage
 ``` js
+var m = require('mitsuku-api')();
 
-
+m.send('hello world')
+  .then(function(response){
+    console.log(response);
+  });
 ```
-
 
 ## License
 Apache 2.0
