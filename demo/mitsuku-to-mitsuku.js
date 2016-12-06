@@ -2,10 +2,9 @@
 
 var factory = require('../'),
     say = require('say'),
-    Promise = require('bluebird'),
-    Cleverbot = require('cleverbot-node');
+    Promise = require('bluebird');
 
-var m1 = proxyCleverbot({cleverbot: new Cleverbot(), tag: 'voice_cmu_us_slt_arctic_clunits'}),
+var m1 = factory({tag: 'voice_rab_diphone'}),
     m2 = factory({tag: 'voice_cmu_us_jmk_arctic_clunits'});
 
 var START_WITH_PHRASE = 'Hello';
@@ -34,28 +33,6 @@ function flatten(s) {
 
 function reverse(s){
     return s.split("").reverse().join("");
-}
-
-function proxyCleverbot(options) {
-    options = options || {};
-    var cleverbot = options.cleverbot,
-        tag = options.tag || 'Anonymous';
-    return {
-        send: function(message) {
-            return new Promise(function (resolve, reject) {
-                cleverbot.write(message, function (res) {
-                    var message = res.message || '';
-                    resolve(message);
-                });
-            });
-        },
-        getTag: function() {
-            return '' + tag;
-        },
-        toString: function() {
-            return this.getTag();
-        }
-    }
 }
 
 loopConverse(m1, m2, null, START_WITH_PHRASE);

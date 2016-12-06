@@ -1,10 +1,11 @@
 {
   "name": "mitsuku-api",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Simple API for Mitsuku chatbot",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "demo": "node demo/mitsuku-to-mitsuku.js"
   },
   "keywords": [
     "api",
@@ -23,7 +24,6 @@
     "superagent": "^1.2.0"
   },
   "devDependencies": {
-    "cleverbot-node": "^0.1.8",
     "say": "^0.6.0",
     "tape": "^4.0.0"
   }

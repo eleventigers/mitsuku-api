@@ -24,6 +24,7 @@ test('Prompt to send and receive messages', function(t) {
     promise = mitsuku.send('nice day');
 
     promise.then(function (m) {
+        console.log("==========" + m);
         t.ok(m && m.length > 0, 'Non null and not empty message response');
     });
 });
